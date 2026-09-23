@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<title>Расписание занятий группы С25-711 — НИЯУ МИФИ</title>
+
+<meta charset='utf-8'>
+<meta content='#28828a' name='theme-color'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link rel="stylesheet" media="all" href="/assets/application-a0b6b52347095bbb3cdfd7f61b7adf9a05cc2fe293fcafa604721296af06280c.css" data-turbolinks-track="true" />
+<script src="/assets/application-70b0c721fe81e8e5e34ddf64d25c447b66b00782d8f5889e93d5572670d640bf.js" data-turbolinks-track="true"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=73472fad-e902-42a2-b833-77bdd0b03fa4&amp;lang=ru_RU" data-turbolinks-track="reload"></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Ti9JgOPYCKzXv4xb2TNpJ8+nfc5nYl6NBEvKcPyqA5r306oqA6WUa81U2l0Hr+N9upsEZLp4KfXv8ibC9+JlOA==" />
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-ccc17adba7d1cab56b722a44ba17833da4c07ece563e2159341a8408c88e16f9.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-32x32-f4c75b262b102802b0ae2b746117e22c230256f2eb412a95ad1e6654fcc1daac.png" sizes="32x32" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-icon-bdb1d36704f3c6227ebf76bcf5f8b2964f5ae5bd86d39622d2b2c3175938f0b8.png" />
+<script>
+  (function() {
+    window.authorized = 1;
+  
+  }).call(this);
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [ ['$','$'] ]}});
+</script>
+<script src="/mathjax/MathJax.js?config=TeX-AMS_HTML-full.js" type="text/javascript"></script>
+<script src='https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js'></script>
+<script src='https://yastatic.net/share2/share.js'></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body data-id='37332'>
+<div id='wrapper'>
+<aside id='sidebar-wrapper'>
+<div class='snow'></div>
+<ul class='sidebar-nav'>
+<li class='sidebar-brand'>
+<a href="/"><img alt="НИЯУ МИФИ" src="/assets/mephi_logo_small_white-49172193011e57532a72d6e713f177ccd81eb0cd80bb6274eb315d922936bf41.png" />
+</a></li>
+<li>
+<a href="/users/37332"><i class="fa fa-home fa-fw"></i>
+Личная страница
+</a></li>
+<li>
+<a href="/talks"><i class="fa fa-envelope fa-fw"></i>
+Сообщения
+<span class='badge count_unread_talks hide pull-right'>0</span>
+</a></li>
+<li>
+<a href="https://digital-services.mephi.ru"><i class="fa fa-bookmark fa-fw"></i>
+Сервисы
+</a></li>
+<li>
+<a href="/users"><i class="fa fa-user fa-fw"></i>
+Пользователи
+</a></li>
+<li>
+<a href="/notifications"><i class="fa fa-bell fa-fw"></i>
+Уведомления
+<span class='count_unread_notifications pull-right badge'>79</span>
+</a></li>
+<li>
+<a href="/users/37332/members"><i class="fa fa-users fa-fw"></i>
+Сообщества
+</a></li>
+<li>
+<a href="/calendars"><i class="fa fa-calendar fa-fw"></i>
+Мероприятия
+</a></li>
+<li>
+<a href="/study_groups"><i class="fa fa-clock-o fa-fw"></i>
+Расписание
+</a></li>
+<li>
+<a target="_blank" href="https://mycareer.mephi.ru"><i class="fa fa-briefcase fa-fw"></i>
+Старт карьеры
+</a></li>
+<li>
+<a href="https://mobileapp.mephi.ru/navigation/"><i class="fa fa-location-arrow fa-fw"></i>
+Навигатор
+</a></li>
+<li>
+<a href="/app"><i class="fa fa-mobile fa-fw"></i>
+Мобильное приложение
+</a></li>
+<li>
+<a href="/development_program"><i class="fa fa-line-chart fa-fw"></i>
+Программа развития
+</a></li>
+<li>
+<a href="/frauds/new"><i class="fa fa-envelope-o fa-fw"></i>
+Сообщить о мошенничестве
+</a></li>
+<li>
+<a href="https://digital-services.mephi.ru/digital_help"><i class="fa fa-question-circle fa-fw"></i>
+Инструкции
+</a></li>
+<li>
+<a href="/logout"><i class="fa fa-sign-out fa-fw"></i>
+Выход
+</a></li>
+</ul>
+</aside>
+
+<!-- / -if @current_user && @current_user.current_students.any? &&  Date.today >= Date.new(2026,4,27) && Date.today <= Date.new(2026, 5, 27) -->
+<!-- /   %nav.navbar.navbar-banner.navbar-mephi-blue -->
+<!-- /     = link_to "https://it.mephi.ru/webform/3240", class: 'navbar-brand', target: '_blank' do -->
+<!-- /       Проверь уровень гибких навыков -->
+<!-- / - no_codes = %w[01.03.02 02.03.01 02.03.02 02.03.03 09.03.01 09.03.02 09.03.03 09.03.04 10.03.01 10.05.01 10.05.02 10.05.03 10.05.04 10.05.05 11.03.01 11.03.02 11.03.03 11.03.04 11.05.01 11.05.02 27.03.03 27.03.04 38.03.05] -->
+<!-- / - if @current_user && @current_user.current_students.any?{|s| s.study_group.plans.any?{|p| no_codes.exclude?(p.code)}} && Date.today >= Date.new(2026, 8, 3) && Date.today < Date.new(2026, 9,7) -->
+<!-- /   %nav.navbar.navbar-banner.navbar-digital-department -->
+<!-- /     = link_to 'https://icis.mephi.ru/digital-department', class: 'navbar-brand', target: '_blank' do -->
+<!-- /       Цифровая кафедра НИЯУ МИФИ -->
+<!-- / - if @current_user && @current_user.current_students.any? && Date.today <= Date.new(2026, 9, 20) -->
+<!-- /   %nav.navbar.navbar-banner.navbar-mephi-medical -->
+<!-- /     = link_to "https://it.mephi.ru/webform/3399", class: 'navbar-brand', target: '_blank' do -->
+<!-- /       Письмо учителю -->
+<nav class='navbar navbar-banner navbar-h2h'>
+<a class="navbar-brand" target="_blank" href="https://it.mephi.ru/webform/3401">От Cердца к Сердцу
+</a></nav>
+<nav class='navbar navbar-banner navbar-media'>
+<a class="navbar-brand" target="_blank" href="https://t.me/nuclearmephi/2532">Медиафестиваль 2026
+</a></nav>
+<nav class='navbar navbar-inverse'>
+<div class='container-fluid'>
+<a id="sidebar-toggle" class="navbar-text" href="#wrapper"><i class="fa fa-bars"></i>
+</a><div class='navbar-header'>
+<a class="navbar-brand" href="/">Корпоративный портал
+</a></div>
+<ul class='nav navbar-nav navbar-right'>
+<li class='dropdown'>
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-circle user-online-status user_37332 user-online"></i>
+<span class='hidden-xs'>Савчук В.Е.</span>
+<div class="user-avatar user-tiny hidden-xs"><img alt="Савчук В.Е." class="user-responsive" src="/system/users/avatars/000/037/332/tiny/pDSC_0215.png?1754556207" /></div>
+<i class="fa fa-angle-down"></i>
+</a><ul class='dropdown-menu'>
+<li>
+<a href="/logout"><i class="fa fa-sign-out fa-fw"></i>
+Выход
+</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+
+
+<div id='page-content-wrapper'>
+<div class='container-fluid'>
+
+
+<div class='pull-right'>
+<div class='btn-group hidden-print'>
+<button name="button" type="button" class="btn btn-primary btn-outline dropdown-toggle" data-toggle="dropdown">Расписание учебных групп
+<i class="fa fa-angle-down"></i>
+</button><ul class='dropdown-menu'>
+<li class='active'><a href="/study_groups?organization_id=1&amp;term_id=23">Расписание учебных групп</a></li>
+<li><a href="/tutors?organization_id=1&amp;term_id=23">Расписание преподавателей</a></li>
+<li><a href="/rooms?organization_id=1&amp;term_id=23">Расписание аудиторий</a></li>
+<li><a href="/departments?organization_id=1&amp;term_id=23">Расписание сотрудников кафедр</a></li>
+</ul>
+</div>
+
+</div>
+<div class='clearfix'></div>
+<div>
+<h1 class='light'>
+Расписание занятий группы
+С25-711
+</h1>
+<p class='text-muted'>Институт финансовых технологий и экономической безопасности НИЯУ МИФИ</p>
+<ol class='breadcrumb'>
+<li><a href="/study_groups?level=1&amp;organization_id=1&amp;term_id=23">НИЯУ МИФИ</a></li>
+<li><a href="/study_groups?level=1&amp;organization_id=1&amp;term_id=23">Осенний семестр 2026/2027 учебного года</a></li>
+<li><a href="/study_groups?faculty_id=129">Расписание учебных групп</a></li>
+<li><a href="/study_groups/24969/schedule">С25-711</a></li>
+<li class='active'>Расписание занятий</li>
+</ol>
+</div>
+
+<ul class='nav nav-tabs hidden-print'>
+<li class='active'>
+<a href="/study_groups/24969/schedule">Все недели</a>
+</li>
+<li>
+<a href="/study_groups/24969/schedule?period=1">Нечетная неделя</a>
+</li>
+<li>
+<a href="/study_groups/24969/schedule?period=2">Четная неделя</a>
+</li>
+<li>
+<a href="/study_groups/24969/day">Текущий день</a>
+</li>
+<li>
+<a href="/study_groups/24969/week">Текущая неделя</a>
+</li>
+</ul>
+
+
+<div class='btn-toolbar'>
+<a class="btn btn-primary" href="/study_groups/24969/schedule"><i class="fa fa-clock-o"></i>
+Расписание занятий
+</a><a class="btn btn-primary" href="/study_groups/24969"><i class="fa fa-users"></i>
+Список обучающихся
+</a><a class="btn btn-primary" href="/study_plans/17001"><i class="fa fa-list-alt"></i>
+Учебный план
+</a></div>
+
+<div class='btn-toolbar hidden-print'>
+<div class='pull-right'>
+<a class="btn btn-primary btn-outline" href="/study_groups/24969/schedule.pdf"><i class="fa fa-print"></i>
+PDF
+</a><a class="btn btn-primary btn-outline" href="/study_groups/24969/schedule.ics"><i class="fa fa-calendar"></i>
+ICS
+</a></div>
+</div>
+<div class='clearfix'></div>
+<h3 class='lesson-wday'>
+Понедельник
+</h3>
+<div class='list-group'>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>08:30 — 10:05</div>
+<div class='lesson-lessons'>
+<div class='lesson' data-id='539508'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716456">Б-210</a>
+<a class="btn-map" data-latitude="55.64969694" data-longitude="37.66574035" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="Б-210" data-id="4716456" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<i title="Резерв" class="fa fa-history"></i>
+Перенос занятий по дисциплине «Управление организацией (предприятием)» с 30 сентября 2026
+<i class='text-muted'>Каф. 63</i>
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33869">Бочкарева Т.Н.</a>
+</span>
+<span class='lesson-dates'>
+(28.09.2026)
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>10:15 — 11:50</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lecture' data-id='533551'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4715974">401</a>
+<a class="btn-map" data-latitude="55.64998511" data-longitude="37.66435096" data-zoom="18.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="401" data-id="4715974" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лек</div>
+
+Управление организацией (предприятием)
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33869">Бочкарева Т.Н.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>11:55 — 13:30</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535172'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716208">каф. 15/3</a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Физическая культура (элективная дисциплина)
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>14:30 — 16:05</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lecture' data-id='533544'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4715999">406</a>
+<a class="btn-map" data-latitude="55.64998511" data-longitude="37.66435096" data-zoom="18.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="406" data-id="4715999" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лек</div>
+
+Деньги, кредит, банки
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33867">Никитинская Ю.В.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+</div>
+<h3 class='lesson-wday'>
+Вторник
+</h3>
+<div class='list-group'>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>08:30 — 10:05</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='533546'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716485">А-306</a>
+<a class="btn-map" data-latitude="55.65066761" data-longitude="37.66352484" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="А-306" data-id="4716485" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Иностранный язык
+<i class="fa fa-exclamation-circle"></i>
+Подгруппа 1
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/34369">Васильева Н.Л.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+<div class='lesson lesson-practice' data-id='533547'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716435">Б-401</a>
+<a class="btn-map" data-latitude="55.64969694" data-longitude="37.66574035" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="Б-401" data-id="4716435" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Иностранный язык
+<i class="fa fa-exclamation-circle"></i>
+Подгруппа 2
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/34367">Дедушкина Е.Д.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+<div class='lesson lesson-practice' data-id='533548'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716434">Б-403</a>
+<a class="btn-map" data-latitude="55.64969694" data-longitude="37.66574035" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="Б-403" data-id="4716434" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Иностранный язык
+<i class="fa fa-exclamation-circle"></i>
+Подгруппа 3
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/34371">Федорова М.А.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>10:15 — 11:50</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lecture' data-id='533549'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716398">408</a>
+<a class="btn-map" data-latitude="55.64998511" data-longitude="37.66435096" data-zoom="18.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="408" data-id="4716398" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лек</div>
+
+Экономическая теория: микроэкономика
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33868">Парфенова М.Д.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>12:45 — 14:20</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535165'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716319">К-1120</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-1120" data-id="4716319" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Теория вероятностей и математическая статистика
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33789">Овсянников Е.А.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>14:30 — 16:05</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535164'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716293">К-414</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-414" data-id="4716293" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Правовое регулирование предпринимательской деятельности
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33720">Кутьин А.Д.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>16:15 — 17:50</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lab' data-id='535173'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716490">А-223</a>
+<a class="btn-map" data-latitude="55.65066761" data-longitude="37.66352484" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="А-223" data-id="4716490" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лаб</div>
+
+Базы данных и экспертные системы
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33721">Крючкова Ю.С.</a>
+</span>
+<span class='lesson-dates'>
+(29.09.2026 — 15.12.2026)
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+</div>
+<h3 class='lesson-wday'>
+Среда
+</h3>
+<div class='list-group'>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>09:20 — 10:05</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535169'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716285">К-822</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-822" data-id="4716285" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Информационные системы в экономике
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/34082">Сергеев С.М.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>10:15 — 11:50</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lab' data-id='535170'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716285">К-822</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-822" data-id="4716285" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лаб</div>
+
+Информационные системы в экономике
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/34082">Сергеев С.М.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>11:55 — 13:30</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535174'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716208">каф. 15/3</a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Физическая культура (элективная дисциплина)
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>14:30 — 16:05</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535167'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716446">Б-221</a>
+<a class="btn-map" data-latitude="55.64969694" data-longitude="37.66574035" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="Б-221" data-id="4716446" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Управление организацией (предприятием)
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33869">Бочкарева Т.Н.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+</div>
+<h3 class='lesson-wday'>
+Четверг
+</h3>
+<div class='list-group'>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>08:30 — 10:05</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lecture' data-id='533553'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716303">К-307</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-307" data-id="4716303" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лек</div>
+
+История экономических учений
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33246">Фомин О.Ю.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>10:15 — 11:50</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lecture' data-id='533555'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4715998">Б-304</a>
+<a class="btn-map" data-latitude="55.64969694" data-longitude="37.66574035" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="Б-304" data-id="4715998" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лек</div>
+
+Теория вероятностей и математическая статистика
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33870">Чечкина Т.П.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>12:45 — 14:20</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lecture' data-id='535123'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716309">К-208</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-208" data-id="4716309" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лек</div>
+
+Экономика организации (предприятия)
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33869">Бочкарева Т.Н.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>14:30 — 16:05</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535125'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716308">К-210</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-210" data-id="4716308" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Нечётная неделя" data-toggle="tooltip" class="lesson-square lesson-square-1" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Введение в специальность
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33257">Рычков В.А.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+<div class='lesson lesson-practice' data-id='535171'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716320">К-1119</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-1119" data-id="4716320" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Чётная неделя" data-toggle="tooltip" class="lesson-square lesson-square-2" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+История экономических учений
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33246">Фомин О.Ю.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>16:15 — 17:50</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535168'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716305">К-305</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-305" data-id="4716305" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Экономическая теория: микроэкономика
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33868">Парфенова М.Д.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+</div>
+<h3 class='lesson-wday'>
+Пятница
+</h3>
+<div class='list-group'>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>12:45 — 14:20</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lecture' data-id='533545'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716303">К-307</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-307" data-id="4716303" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лек</div>
+
+Правовое регулирование предпринимательской деятельности
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33720">Кутьин А.Д.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>14:30 — 16:05</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-lecture' data-id='533568'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4715999">406</a>
+<a class="btn-map" data-latitude="55.64998511" data-longitude="37.66435096" data-zoom="18.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="406" data-id="4715999" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лек</div>
+
+Базы данных и экспертные системы
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33021">Куприянов Д.Ю.</a>,
+</span>
+<span class='text-nowrap'>
+<a href="/tutors/33022">Радыгин В.Ю.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>16:15 — 17:50</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535175'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716289">К-805</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-805" data-id="4716289" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Чётная неделя" data-toggle="tooltip" class="lesson-square lesson-square-2" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Базы данных и экспертные системы
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33874">Малькута А.М.</a>
+</span>
+<span class='lesson-dates'>
+(11.09.2026 — 23.10.2026)
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>18:45 — 20:20</div>
+<div class='lesson-lessons'>
+<div class='lesson' data-id='539537'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716310">К-206</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-206" data-id="4716310" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<i title="Резерв" class="fa fa-history"></i>
+Перенос занятий по дисциплине «Деньги, кредит, банки» с 19 сентября 2026
+<i class='text-muted'>Каф. 63</i>
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33871">Степанов И.А.</a>
+</span>
+<span class='lesson-dates'>
+(02.10.2026)
+</span>
+<div class='clearfix'></div>
+</div>
+
+<div class='lesson' data-id='539538'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716311">К-205</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-205" data-id="4716311" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<i title="Резерв" class="fa fa-history"></i>
+Перенос занятий по дисциплине «Деньги, кредит, банки» с 26 сентября 2026
+<i class='text-muted'>Каф. 63</i>
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33871">Степанов И.А.</a>
+</span>
+<span class='lesson-dates'>
+(09.10.2026)
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+</div>
+<h3 class='lesson-wday'>
+Суббота
+</h3>
+<div class='list-group'>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>10:15 — 11:50</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535162'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716307">К-211</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-211" data-id="4716307" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Деньги, кредит, банки
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33871">Степанов И.А.</a>
+</span>
+<span class='lesson-dates'>
+(05.09.2026 — 07.11.2026)
+</span>
+<div class='clearfix'></div>
+</div>
+
+<div class='lesson lesson-lab' data-id='535163'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716307">К-211</a>
+<a class="btn-map" data-latitude="55.64851694" data-longitude="37.66735503" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="К-211" data-id="4716307" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Лаб</div>
+
+Деньги, кредит, банки
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/33871">Степанов И.А.</a>
+</span>
+<span class='lesson-dates'>
+(14.11.2026 — 19.12.2026)
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>12:45 — 14:20</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='535166'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4715984">В-117</a>
+<a class="btn-map" data-latitude="55.65121966" data-longitude="37.66305814" data-zoom="18.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="В-117" data-id="4715984" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Экономика организации (предприятия)
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/34078">Чурбанов К.И.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+<div class='list-group-item d-xs-flex'>
+<div class='lesson-time'>14:30 — 16:05</div>
+<div class='lesson-lessons'>
+<div class='lesson lesson-practice' data-id='533562'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716485">А-306</a>
+<a class="btn-map" data-latitude="55.65066761" data-longitude="37.66352484" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="А-306" data-id="4716485" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Иностранный язык
+<i class="fa fa-exclamation-circle"></i>
+Подгруппа 1
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/34369">Васильева Н.Л.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+<div class='lesson lesson-practice' data-id='533563'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716458">Б-207</a>
+<a class="btn-map" data-latitude="55.64969694" data-longitude="37.66574035" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="Б-207" data-id="4716458" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Иностранный язык
+<i class="fa fa-exclamation-circle"></i>
+Подгруппа 2
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/34374">Бирюкова О.Д.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+<div class='lesson lesson-practice' data-id='533564'>
+<div class='pull-right'>
+<i class="fa fa-map-marker"></i>
+<a class="text-nowrap" href="/rooms/4716459">Б-205</a>
+<a class="btn-map" data-latitude="55.64969694" data-longitude="37.66574035" data-zoom="17.0" data-address="115409, г. Москва, Каширское ш., д. 31" data-name="Б-205" data-id="4716459" data-close-title="Закрыть" href="#"><i class="fa fa-map-o"></i></a>
+</div>
+<span title="Еженедельно" data-toggle="tooltip" class="lesson-square lesson-square-0" style="font-family: Ubuntu"></span>
+<div class='label label-default label-lesson'>Пр</div>
+
+Иностранный язык
+<i class="fa fa-exclamation-circle"></i>
+Подгруппа 3
+<i class="fa fa-graduation-cap"></i>
+<span class='text-nowrap'>
+<a href="/tutors/34381">Монина О.В.</a>
+</span>
+<div class='clearfix'></div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<footer>
+<div class='pull-left'>
+<div><span>© НИЯУ МИФИ, 2015–2026</span></div>
+</div>
+<div class='pull-right'>
+<div>
+Техническая поддержка:
+<a title="Адрес электронной почты" href="mailto:reg@campus.mephi.ru?subject=%D0%9A%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB"><i class="fa fa-envelope"></i></a>
+</div>
+<div>Разработано в УИМООП НИЯУ МИФИ</div>
+</div>
+<div class='clearfix'></div>
+</footer>
+
+</div>
+</div>
+</div>
+<div id='modal_wrapper'></div>
+
+
+</body>
+</html>
